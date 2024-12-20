@@ -1,0 +1,48 @@
+body{
+  background: rgba(210,140,170,1) url(restaurant.jpeg) no-repeat center center;
+  background-size: cover;
+  background-blend-mode: screen;
+
+}
+
+#breadcrumbs-wrapper{
+  padding-bottom: 20px;
+  background: #bc4545;
+  color: #fff;
+}
+
+#breadcrumbs-title{
+  color: #fff;
+}
+
+#strip{
+  background: #a82128;
+  height: 6px;
+  width: 100%;
+}
+
+#u-details{
+  background: url(burger.jpeg) no-repeat center center;
+  background-size: cover;
+}
+
+#menus{
+  background: #fff;
+}
+
+.bold{
+  background: #fff;
+}
+
+.bold:hover{
+  background: #fff;
+}
+
+.active{
+  background: #fff;
+}
+
+#slide-out{
+  background: url(sidebar.jpg) no-repeat center center;
+  background-size: cover;
+}
