@@ -1,0 +1,705 @@
+<html>
+    <head>
+        <style>
+            
+#seperate{
+    top: 319%;
+    position: absolute;
+    background: #bc4545;
+    height: 30px;
+    width: 100%;
+    box-shadow: 5px 5px 5px #000;
+    transition: all 0.5s;
+    z-index: 3;
+}
+
+#seperate:hover{
+    height: 34px;
+    box-shadow: 15px 15px 20px #000;
+}
+
+#footer{
+    top: 320%;
+    position: absolute;
+    background: #33373D;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+
+}
+
+#sqr{
+    position: absolute;
+    background: linear-gradient(to top, #ea4b42, #cc4557);
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-right: 5px;
+    padding-left: 5px;
+    height: auto;
+    width: auto;
+    left: 15px;
+    text-align: center;
+    color: white;
+    float: center;
+    top: 10%;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 8px #111;
+    border: 1px solid #bc4545;
+}
+
+            #noodles{
+    background: none;
+    height: 260px;
+    width: 260px;
+    position: absolute;
+    
+    /*box-shadow: 2px 2px 8px #111;*/
+    z-index: 0;
+    top: 252%;
+    float: left;
+    right: 508px;
+    filter: drop-shadow(7px 7px 7px #111);
+    transition: all 0.6s ease;
+}
+
+#noodles:hover{
+    filter: drop-shadow(13px 13px 14px #111);
+    height: 270px;
+    width: 270px;
+    cursor: pointer;
+}
+
+#noodles:active{
+    animation: rotate 1s;
+}
+
+#plate{
+    background: none;
+    height: 200px;
+    width: auto;
+    position: absolute;
+    
+    /*box-shadow: 2px 2px 8px #111;*/
+    z-index: 0;
+    transform: rotate(90deg);
+    top: 270%;
+    z-index: 1;
+    left: 10px;
+    filter: drop-shadow(7px -7px 7px #111);
+    transition: all 0.6s ease;
+}
+
+#plate:hover{
+    filter: drop-shadow(13px -13px 14px #111);
+    height: 210px;
+    width: auto;
+    cursor: pointer;
+}
+
+#sitem{
+    position: relative;
+    z-index: 2;
+    left: 80px;
+    display: inline-block;
+    padding: 3px 10px;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+    border: 3px solid #a82128;
+    border-radius: 0px 6px 6px 0px;
+    outline: none;
+    background: #bc4545;
+    z-index: 1;
+    transition: 0.7s ease-out;
+}
+
+#napkin{
+    background: none;
+    height: 200px;
+    width: auto;
+    position: absolute;
+    
+    /*box-shadow: 2px 2px 8px #111;*/
+    z-index: 0;
+    
+    top: 252%;
+    z-index: 1;
+    left: 32px;
+    filter: drop-shadow(4px 4px 5px #111);
+    transition: all 0.6s ease;
+}
+
+#napkin:hover{
+    filter: drop-shadow(7px 7px 9px #111);
+    height: 205px;
+    width: auto;
+    cursor: pointer;
+}
+
+.links{
+    margin: 0;
+    margin-bottom: 30px;
+    margin-top:30px;
+    opacity: 1;
+    font-size: 60px;
+    position: relative;
+    width: auto;
+    color: #770528;
+    left: 250px;
+    transition: all 0.5s;
+}
+
+.links:hover{
+    letter-spacing: 4px;
+    font-size: 64px;
+}
+
+#tblinks{
+    margin-top: 50px;
+}
+
+#search input{
+    height: 35px;
+    width: 30%;
+    background: #aaa;
+    border: none;
+    color: #a04545;
+    font-size: 20px;
+    padding-left: 30px;
+    border-radius: 6px;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    left: 8%;
+    transition: all 0.5s;
+}
+
+#search input:focus::-webkit-input-placeholder{    
+     transition: all 0.5s;
+    font-size: 14px;
+    transform: translateX(270px);
+}
+
+
+#ln{
+    margin-left: 100px;
+}
+
+#dn{
+    margin-left: 200px;
+}
+
+#typewriter{
+margin-top:25%;
+font-size:24px;
+font-weight: 30;
+}
+#btn{                             
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: block;
+    padding: 15px 30px;
+    font-weight: 850;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #a04545;
+    border: 5px solid #a04545;
+    outline: none;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+    transition: 0.7s ease-out;
+}
+
+#nav{                          
+    color: #a04545;
+    font-size: 40px;
+    height: 30px;
+    width: 35px;
+    top: -45px;
+    float: right;
+    right: 10px;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
+
+#nav:hover{                                                              
+    cursor: pointer;
+    font-size: 36;
+}      
+
+#panel{ 
+    color: #000;
+    top:755px;
+    font-size: 30px;
+    color: #676767;
+    font-family: 'Arial', Helvetica, sans-serif;
+    position: absolute;
+    left: 250px;
+    font-size: 20px;
+    transform: skewX(-11deg);
+    font-weight: 500;
+}
+
+
+#login{
+    position: absolute;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 14px;
+    background: none;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    padding: 9px 18px;
+    float: right;
+    right: 340px;
+    top: 16px;
+    border: 2px solid #bc4545;
+    border-radius: 6px;
+    transition: background 0.4s;
+}
+
+#login:hover{
+    cursor: pointer;
+    background: #e68585;
+}
+ 
+
+#fill{
+    position: absolute;
+    background: url(restaurant.jpeg) no-repeat center center;
+    background-size: cover;
+    height: 70%;
+    width: 80%;
+    left: 10%;
+    top: 160%;
+    opacity: 0.8;
+    border-radius: 6px;
+    z-index: -2;
+}
+
+
+#register{             
+    position: absolute;
+    font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 16px;
+    background: none;
+    text-transform: uppercase;
+    margin: 0;
+    color: #a04545;
+    padding: 9px 18px;
+    float: right;
+    right: 200px;
+    top: 16px;
+    transition: all 0.4s;
+}
+
+#register:hover{
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    transform-origin: bottom center;
+    transform: translateY(2px);
+}
+
+
+#ds{
+    margin-left: 300px;
+}
+    
+        </style>
+        <title>
+            TOMATO
+        </title>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand|Fredoka+One|Concert+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One|Fjalla+One|Open+Sans+Condensed:300" rel="stylesheet">
+        <link rel="shortcut icon" type="image/x-icon" href="icons8-pizza-32.png" />
+        <link href="food.css" rel="stylesheet" type="text/css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+
+    <body>
+        
+        <div id="start">
+
+            <div id="overlay">
+                <p id="screen" onmouseover="blur()">TOMATO</p>
+                <div id="intro"><button id="btn" onclick="fadeout()" >HUNGRY?</button></div>
+            </div>
+
+            <div id="overlay2">
+            </div>
+                
+
+        
+                <div id="header">
+            
+                <div id="logo" style="font-family: 'Fjalla One', cursive;">TOMATO</div>
+                <div id="search">
+                 <!----   <form action="s1.php" method="post">
+                    <input type="text" name="search" placeholder="search here">  
+                    <button type="submit" id="sitem">search</button>
+                    </form>-->
+                    <form action="s1.php" method ="post">
+                        <input type="text" placeholder="search here" name="search">
+                        <button type="submit" id="sitem">Search</button>
+    
+                        </form>
+                </div>
+                    <div id="login"><a href="login.php">LOGIN</a></div>  <div id="register"><a href="register.php">SIGN UP</a></div>  <div id="nav" onclick="menu()">=</div>
+                </div>
+
+            <div id="menu1">
+            </div>
+           
+            <div id="menu2">
+            </div>
+
+
+            <div id="photo">
+
+            </div>
+
+            <div id="photo2">
+
+            </div>
+
+            <div id="photo3">
+
+            </div>
+
+            <div id="photo4">
+
+            </div>
+
+
+        </div>
+
+        <div id="black">
+        </div>
+
+        <div id="front">
+                <div id="square" style="font-family: 'Fjalla One', cursive"><i>Tomato</i></div>
+                <h1 id="heading" style="font-family: 'Poiret One', cursive">ORDER FOOD ONLINE</h1>
+                <h4 id="typewriter" style="font-family: 'Open Sans Condensed', sans-serif"></h4>
+        </div>
+
+
+        <div id="section">
+        </div>
+        <h1 id="panel">Quick Searches</h1>    
+
+        <div id="meal">
+            <a href="t1.php"><img src="toaster.png" class="meals" id="toast" onclick="index.php"><br>
+            <h5 class="type" style="font-family: 'Poiret One', cursive;">Breakfast</h5></a>
+
+            <a href="t2.php"><img src="hamburger.png" class="meals" id="ham"><br>
+            <h5 class="type" style="font-family: 'Poiret One', cursive;" id="lunch">Lunch</h5></a>
+
+            <a href="t3.php"><img src="wine.png" class="meals" id="wine"><br>
+            <h5 class="type" style="font-family: 'Poiret One', cursive;" id="dine">Dinner</h5></a>
+
+            <a href="t4.php"><img src="meat.png" class="meals" id="meat"><br>
+            <h5 class="type" style="font-family: 'Poiret One', cursive;" id="nonveg">Non-Veg</h5></a>
+
+            <a href="t5.php"><img src="cafe.png" class="meals" id="cafe"><br>
+            <h5 class="type" style="font-family: 'Poiret One', cursive;" id="coff">FastFood</h5></a>
+
+            <a href="t6.php"></a><img src="tea.png" class="meals" id="tea"><br>
+            <h5 class="type" style="font-family: 'Poiret One', cursive;" id="t">Tea</h5></a>
+
+            <a href="t7.php"><img src="drink.png" class="meals" id="drink"><br>
+            <h5 class="type" style="font-family: 'Poiret One', cursive;" id="cold">Drinks</h5></a>
+
+        </div>
+        <div id="fill"></div>
+ 
+        <div id="section2">
+        </div>
+
+        <div id="section3">
+        </div>
+
+        <div id="section4">
+                <div id="tblinks">
+                        <a href = "t1.php"><h2 class="links" id="br">BreakFast</h2></a>
+                        <a href = "t2.php"><h2 class="links" id="ln">lunch</h2></a>
+                        <a href = "t3.php"><h2 class="links" id="dn">Dinner</h2></a>
+                        <a href = "t7.php"><h2 class="links" id="ds">drinks</h2></a>
+                        </div>
+        </div>
+
+        <div id="section5">
+        </div>
+
+        <div id="section6">
+        </div>
+
+
+        
+
+        <img src="lemon.png" id="lemon" class="fruits">
+
+        <img src="lemonhalf.png" id="lemon2" class="fruits">
+
+        <img src="tomato2.png" id="tomato" class="fruits" >
+
+        <img src="mint.png" id="mint" class="fruits">
+
+        <img src="strawberry.png" id="straw" class="fruits">
+
+        <img src="tomato.png" id="tomato2" class="fruits">
+
+        <img src="lemon.png" id="lemon3" class="fruits">
+       
+        <img src="mint.png" id="mint2" class="fruits">
+        
+        <a href = "t2.php"><img src="noodles.png" id="noodles"></a>
+        
+        <img src="napkin.png" id="napkin">
+       
+        <a href = "t3.php"><img src="tableware.png" id="plate"></a>
+
+
+        <a href = "t6.php"><img src="coffee2.png" id="coffee"></a>
+
+        <a href = "t1.php"><img src="breakfast.png" id="breakfast"></a>
+
+       <!--
+
+        <div id="form">
+            <div id="cross" onclick="cross()">x</div>
+                <form action="login.php" >
+                    <div id="formhead">Log IN</div>
+                    <div class="field"><input type="text" placeholder="USERNAME" id="user" name="username"></div>
+                    <div class="field"><input type="password" placeholder="PASSWORD" id="pass" name="pass"></div>
+                    <button id="submit" type="submit" name="submit">log in</button>
+                </form>
+        </div>
+
+        -->
+        <div id="seperate">
+
+            </div>
+    
+    
+         <div id="footer">
+    
+                <a href="food.html"><div id="sqr" style="font-family: 'Fjalla One', cursive;"><i>Tomato</i></div></a>
+                <div id="line" align="center"></div>
+    
+        </div>
+    
+        <script>
+                var i = 0;
+                var txt = 'One cannot think well, love well, sleep well,' +"\n"+'if one has not dined well.';
+                var speed = 100;
+                
+                function typeWriter() {
+                        if (i < txt.length) {
+                            document.getElementById("typewriter").innerHTML += txt.charAt(i);
+                            i++;
+                            setTimeout(typeWriter, speed);
+                        }
+                        if(i===txt.length){
+                        document.getElementById("typewriter").innerHTML = "";
+                        i=0;
+                        }
+                }
+                
+                typeWriter();
+                
+                </script>
+                
+    
+    <script>
+    
+
+        window.onbeforeunload = function () {
+            window.scrollTo(0, 0);
+        };
+
+        var fade=false;
+        if(fade===true){
+            fadeout();
+        }
+
+        function fadeout(){
+            fade=true;
+
+            TweenMax.to("#btn",1,{
+                y: -230,
+                opacity: 0.1
+            });
+
+            TweenMax.to("#screen",1,{
+                y: -500,
+                opacity: 0.1,
+                delay: 1.6,
+                ease: Power2.easeInOut
+            });
+
+            
+            
+            TweenMax.to("#overlay", 3, {
+                delay: 1.9,
+            webkitFilter: "blur(2px)",
+                ease: Power0.easeInOut
+            });
+
+
+
+            TweenMax.from("#overlay", 2, {
+                ease: Power2.easeInOut
+            });
+
+            TweenMax.to("#overlay", 2, {
+                delay: 2.5,
+                top: "-110%",
+                ease: Expo.easeInOut
+            });
+
+            TweenMax.to("#overlay2", 2, {
+                delay: 3.5,
+                top: "-110%",
+                ease: Expo.easeInOut
+            });
+
+            TweenMax.from("#photo", 2, {
+                delay: 3.2,
+                opacity: 0,
+                ease: Elastic.easeInOut
+            });
+
+            TweenMax.to("#photo", 2, {
+                opacity: 1,
+                y: 0,
+                delay: 3.2,
+                ease: Elastic.easeInOut
+            });
+
+            TweenMax.to("#overlay2", 2, {
+                delay: 3.5,
+                top: "-110%",
+                ease: Expo.easeInOut
+            });
+
+
+            TweenMax.from("#section", 2, {
+                delay: 3.2,
+                opacity: 0,
+                ease: Elastic.easeInOut
+            });
+
+            TweenMax.to("#section", 2, {
+                opacity: 1,
+                y: 0,
+                delay: 3.2,
+                ease: Elastic.easeInOut
+            });
+
+            TweenMax.to("html, body", 4, {
+                delay: 3,
+                overflowY: "scroll" 
+            });
+
+
+            
+        }
+
+        var menuOpen = false;
+
+
+
+            function menu(){
+            if(menuOpen===false){
+            TweenMax.to("#menu1", 2, {
+                
+                y: 500,
+                ease: Elastic.easeInOut
+            });
+
+            TweenMax.to("#menu2", 2, {
+                y: 500,
+                ease: Elastic.easeInOut
+            });
+            document.getElementById("nav").innerHTML = "x";
+            menuOpen = true;
+            }
+            else{
+            TweenMax.to("#menu1", 2, {
+                
+                y: 0,
+                ease: Elastic.easeInOut
+            });
+
+            TweenMax.to("#menu2", 2, {
+                y: 0,
+                ease: Elastic.easeInOut
+            });
+            document.getElementById("nav").innerHTML = "=";
+            menuOpen = false;
+
+            }
+
+            }
+
+
+        var login = false;
+
+
+        jQuery(document).ready(
+    function() {
+
+    var $w = $(window);
+    var $d = $('#breakfast');
+    var $y = $('#coffee');
+
+    var lastScrollTop = $w.scrollTop();
+
+    var _x = 0;
+    var _y = 0;
+
+    $(window).scroll(function(event) {
+      var st = $w.scrollTop();
+
+      _x = st-1395;     // only change this to change hieght incr. to incr. height and vice versa
+      _y = st-1395;     // and this too
+
+      lastScrollTop = st;
+      
+      if(_x<=60&&_y<=60){
+       
+        $d.css('right', _x+140);
+        $d.css('bottom', _y+140); 
+      
+        $y.css('right', _x-5);
+        $y.css('bottom', _y-5);
+      }
+
+      if(_x<=60&&_y<=60){
+
+         $d.css({ transform: 'rotate(' + (_x)/100 + 'rad)' });
+        $y.css({ transform: 'rotate(' + (_x)/100 + 'rad)' });
+
+      }
+      
+    });
+  })
+
+    
+
+
+</script>
+
+
+    </body>
+</html>
